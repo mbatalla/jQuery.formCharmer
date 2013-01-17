@@ -1,0 +1,96 @@
+@charset "utf-8";
+/* CSS Document */
+
+.formCharmed{
+		display:inline-block;
+		padding: 30px 2.5%;
+		position: relative;
+		-webkit-transition: height 500ms cubic-bezier(1.000, 0, 0.000, 1); /* older webkit */
+		-webkit-transition: height 500ms cubic-bezier(1.000, -0.600, 0.000, 1.000);
+		   -moz-transition: height 500ms cubic-bezier(1.000, -0.600, 0.000, 1.000);
+		    -ms-transition: height 500ms cubic-bezier(1.000, -0.600, 0.000, 1.000);
+		     -o-transition: height 500ms cubic-bezier(1.000, -0.600, 0.000, 1.000);
+		        transition: height 500ms cubic-bezier(1.000, -0.600, 0.000, 1.000); /* custom */
+		width: 95%;
+		overflow:hidden;
+	}
+
+/*.formCharmed.wCounter {
+		padding-top: 100px;
+	}*/
+
+.charmerCount {
+	    background: none repeat scroll 0% 0% rgb(0, 0, 0);
+	    color: rgb(255, 255, 255);
+	    font-size: 2em;
+	    right: 4%;
+	    position: absolute;
+	    top: 50px;
+	    z-index: 500;
+	}
+
+
+
+.formCharmed > .itemSlide {
+		/*background: #0CF;*/
+		border:none;
+		display:block;
+		left:100%;
+		margin:0px;
+		overflow:hidden;
+		padding: 2.5%;
+		position:absolute;
+		top:0px;
+		width:95%;
+		opacity: 0		
+	}
+
+
+.formCharmed > .itemSlide.active{
+		left:0%;
+		opacity: 1;
+	}
+
+.formCharmed > .itemSlide.pass{
+	 	left:-100%;
+		opacity: 0	
+	}
+
+.itemSlide .details {
+		margin: 20px 0px 0px;
+		display:block;
+		overflow:hidden;
+		width:92%;
+	}
+
+.details > H2{
+		font-size: 2em
+	}
+
+.details > P:first-child{
+		margin-top:25px;
+	}
+
+.charmerNav {width:100%; margin:25px 0px 0px; border-top:1px solid #e5e5e5; padding-top:24px}
+.charmerNav > UL {display:inline-block; width:100%; list-style:none;}
+.charmerNav > UL > LI {display:inline-block}
+.charmerNav > UL > LI > SPAN {color:#FFF; background:#CB623F; padding:8px 25px; display:block}
+.charmerNav > UL > LI:first-child{float:left}
+.charmerNav > UL > LI:last-child{float:right}
+
+.input {
+		border:1px solid #e6e6e6;
+		border-radius: 0px; 
+		display: inline-block;
+		font-size: 1em;
+		padding: 10px 1%;
+		width:97%;
+		-webkit-appearance: none;
+	}
+	
+.label {
+		display: inline-block;
+		font-size: 1.1em;
+		padding: 20px 0px 5px;
+		width:100%;
+	}
